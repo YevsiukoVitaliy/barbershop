@@ -16,10 +16,12 @@
     margin-top: 44px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
 }
-.popularity__item{
-    width: 193px;
+.popularity__item{ 
+    width: 114px;
     height: 133px;
     background-color: #F7F7F7;
     display: flex;
@@ -32,6 +34,12 @@
     }
     &:nth-child(even){
         margin-top: 30px;
+    }
+    @media screen and (min-width:420px) { 
+        width: 164px;
+        }
+    @media screen and (min-width:480px) { 
+    width: 193px;
     }
 }
 .popularity__count{
