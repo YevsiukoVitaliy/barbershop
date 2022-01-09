@@ -1,0 +1,38 @@
+.subtitle--grey{
+    color: #9DA4BD60;
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left:80px ;
+    &::after{
+        position: absolute;
+        left: 0;
+        top: 7px;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #9DA4BD60;
+    }
+}
+.subtitle{
+    color: #303030;
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-left:80px ;
+    &::after{
+        position: absolute;
+        left: 0;
+        top: 7px;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+    }
+}

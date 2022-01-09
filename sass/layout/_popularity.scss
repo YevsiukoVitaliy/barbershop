@@ -1,0 +1,63 @@
+.popularity__title{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    margin: 20px 0;
+    color: #303030;
+}
+.popularity__text{
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+.popularity-list{
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.popularity__item{
+    width: 193px;
+    height: 133px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 29.5px;
+    &:nth-child(odd){
+        margin-right: 30px;
+    }
+    &:nth-child(even){
+        margin-top: 30px;
+    }
+}
+.popularity__count{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    &::after{
+        content: '+';
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.38;
+        color: #FF6C00;
+        margin-top: 5px;
+    }
+}
+.popularity__item--text{
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    color: #303030;
+}

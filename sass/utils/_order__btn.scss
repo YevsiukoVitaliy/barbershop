@@ -1,0 +1,17 @@
+.order__btn{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #303030;
+    border: 1px solid #FF6C00;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 12px 37px;
+    &:hover,
+    &:focus{
+        background-color: #FF6C00;
+        color: #FFFFFF;
+    }
+}
