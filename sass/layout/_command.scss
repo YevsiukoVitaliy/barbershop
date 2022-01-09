@@ -9,6 +9,9 @@
     letter-spacing: 0.05em;
     margin: 20px 0 40px 0;
     color: #303030;
+    @media screen and (max-width:420px) {
+        font-size: 32px;
+    }
 }
 .container__masters{
     display: flex;

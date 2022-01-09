@@ -13,6 +13,9 @@
     &:focus{
         background-color: #FF6C00;
     }
+    @media screen and (max-width:420px) {
+        padding: 12px 15px;
+    }
 }
 .footer__title{
     font-family: Raleway;
@@ -23,6 +26,9 @@
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    @media screen and (max-width:420px) {
+        font-size: 32px;
+    }
 }
 .recording__form{
     margin: 44px 0;
@@ -89,7 +95,7 @@
         color: #FFFFFF;
     }
 }
-.recordibg__container--btn{
+.recording__container--btn{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -171,13 +177,12 @@
         height: 1px;
         background-color: #303030;
     }
-}
-.footer__social--item{
-   
+    @media screen and (max-width:420px) {
+        padding-left: 80px;
+    }
 }
 .footer__social{
     display: flex;
     margin-right: auto;
     margin-bottom: 20px;
-    
 }

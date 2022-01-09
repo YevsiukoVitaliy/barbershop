@@ -16,6 +16,9 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
+    @media screen and (max-width:420px) {
+        font-size: 10px;
+    }
 }
 .services__item--textline{
     order: 1;
@@ -52,6 +55,9 @@
     &:focus{
         background-color: #FF6C00;
     }
+    @media screen and (max-width:420px) {
+        padding: 12px 15px;
+    }
 }
 .services__container{
     display: flex;
@@ -65,4 +71,7 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     margin-top: 20px;
+    @media screen and (max-width:420px) {
+        font-size: 32px;
+    }
 }
