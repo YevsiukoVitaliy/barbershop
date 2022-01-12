@@ -9,75 +9,91 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" 
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>BarberShop</title>
 </head>
 <body>
     <header class="header">    
-             <section class="header__section"> 
-        <div class="container__no--padding">
-            <div class="header__container">
-            <a>  
-                <svg width="69" height="55.5" class="header__logo">
-                    <use href="./image/icon.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <button type="button" class="button__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
-                <svg width="40" height="40">
-                    <use href="image/icon.svg#icon-menu"></use>
-                </svg>
-            </button>
-            </div>
-        <ul class="header__list">
-            <li class="header__item">
-                <h3 class="subtitle--grey">A hair salon for men in Kyiv</h3>
-                <h1 class="header__title">BarberShop</h1>
-                <p class="header__text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+    <section class="section__left">
+        <a class="logo__link">  
+            <svg width="69" height="55.5" class="header__logo">
+                <use href="./image/icon.svg#icon-logo"></use>
+            </svg>
+        </a>
+    </div>
+        <ul class="section__left--list">
+            <li class="section__left--item">
+                <a class="section__left--link">
+                    Instagram
+                </a>    
+            </li>
+            <li class="section__left--item">
+                <a class="section__left--link">
+                    Youtube
+                </a>
             </li>
         </ul>
-        <div class="mobile__menu js-menu-container" id="mobile-menu">
-            <div class="container__menu">
-                <button type="button" class="button__close js-close-menu">
+    </section>
+             <section class="header__section"> 
+        <div class="container__no--header">
+            <div class="container__cap">
+                <div class="header__container">
+                    <a class="logo__link">  
+                        <svg width="69" height="55.5" class="header__logo">
+                            <use href="./image/icon.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                <button type="button" class="button__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
                     <svg width="40" height="40">
-                        <use href="image/icon.svg#icon-close"></use>
+                        <use href="image/icon.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#entry" class="nav__link nav__link-color">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                Услуги и цены
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#command" class="nav__link">
-                                Мастера
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contakt" class="nav__link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="contaks">
-                    <li class="contaks__item">
-                        <a href="tel:+380441111111" class="contaks__link">
-                            +38 044 111 11 11
-                        </a>
-                    </li>
-                    <li class="contaks__item">
-                        <a href="#" class="order__btn">
-                            онлайн-запись
-                        </a>
-                    </li>
-                </ul>
+                </div>    
+            <div class="mobile__menu js-menu-container" id="mobile-menu">
+                <div class="container__menu">
+                    <button type="button" class="button__close js-close-menu">
+                        <svg width="40" height="40">
+                            <use href="image/icon.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <div class="container__nav">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#entry" class="nav__link nav__link-color">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#services" class="nav__link">
+                                        Услуги и цены
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#command" class="nav__link">
+                                        Мастера
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#contakt" class="nav__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="contaks">
+                            <li class="contaks__item">
+                                <a href="tel:+380441111111" class="contaks__link">
+                                    +38 044 111 11 11
+                                </a>
+                            </li>
+                            <li class="contaks__item">
+                                <a href="#" class="order__btn">
+                                    онлайн-запись
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 <ul class="header__social">
                     <li class="header__social--item">
                         <a class="header__social--link">
@@ -90,10 +106,18 @@
                         </a>
                     </li>
                 </ul>
+                </div>
             </div>
         </div>
-    </div>
+        <ul class="header__list">
+            <li class="header__item">
+                <h3 class="subtitle--grey">A hair salon for men in Kyiv</h3>
+                <h1 class="header__title">BarberShop</h1>
+                <p class="header__text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+            </li>
+        </ul>
     </section>
+    </div>
     </header>
     <main>
         <section class="section" id="entry">
@@ -199,7 +223,7 @@
                         <li class="command-item">
                             <picture>
                                 <source srcset="./image/img1command1.jpg ,
-                                ./image/img1command1@2x.jpg " 
+                                ./image/img1command1@2x.jpg 2x" 
                                 media="(min-width:320px)">
                                 <img class="command__img" src="./image/img1command1.jpg" alt="">
                             </picture>
@@ -243,7 +267,7 @@
                         <li class="command-item">
                             <picture>
                                 <source srcset="./image/img2command2.jpg , 
-                                ./image/img2command2@2x.jpg "
+                                ./image/img2command2@2x.jpg 2x"
                                 media="(min-width:320px)">
                                 <img class="command__img" src="./image/img2command2.jpg" alt="">
                             </picture>
@@ -287,7 +311,7 @@
                         <li class="command-item">
                             <picture>
                                 <source srcset="./image/img3command3.jpg , 
-                                ./image/img3command3@2x.jpg"
+                                ./image/img3command3@2x.jpg 2x"
                                 media="(min-width:320px)">
                                 <img class="command__img" src="./image/img3command3.jpg" alt="">
                             </picture>
@@ -340,7 +364,7 @@
                     <li class="works__item">
                         <picture>
                             <source srcset="./image/masters1.jpg ,
-                            ./image/masters1@2x.jpg"
+                            ./image/masters1@2x.jpg 2x"
                             media="(min-width:320px)">
                             <img src="./image/masters1.jpg" alt="">
                         </picture>
@@ -348,7 +372,7 @@
                     <li class="works__item">
                         <picture>
                             <source srcset="./image/masters2.jpg ,
-                            ./image/masters2@2x.jpg"
+                            ./image/masters2@2x.jpg 2x"
                             media="(min-width:320px)">
                             <img src="./image/masters2.jpg" alt="">
                         </picture>
@@ -356,7 +380,7 @@
                     <li class="works__item">
                         <picture>
                             <source srcset="./image/masters3.jpg ,
-                            ./image/masters3@2x.jpg"
+                            ./image/masters3@2x.jpg 2x"
                             media="(min-width:320px)">
                             <img src="./image/masters3.jpg" alt="">
                         </picture>
@@ -364,7 +388,7 @@
                     <li class="works__item">
                         <picture>
                             <source srcset="./image/masters4.jpg ,
-                            ./image/masters4.jpg@2x"
+                            ./image/masters4@2x.jpg 2x"
                             media="(min-width:320px)">
                             <img src="./image/masters4.jpg" alt="">
                         </picture>
