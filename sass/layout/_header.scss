@@ -16,8 +16,6 @@
         min-height: 437px;
 }
     @media screen and(min-width:768px) {
-        
-    width: 576px;
     }
 }
 
@@ -167,7 +165,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 12px;
         
     }
 }
@@ -312,4 +309,29 @@
         justify-content: inherit;
         flex-direction: column;
         }
+}
+.contaks__btn{
+    width: max-content;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #303030;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    padding: 12px 37px;
+    &:hover,
+    &:focus{
+        background-color: #FF6C00;
+        color: #FFFFFF;
+    }
+    @media screen and (max-width:420px) {
+        padding: 12px 15px;
+    }
+    @media screen and (min-width:768px) {
+        padding: 12px 20px;
+        color: #FFFFFF;
+    }
 }

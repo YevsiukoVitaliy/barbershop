@@ -55,6 +55,8 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -77,6 +79,10 @@ button {
 }
 
 .recording__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -87,7 +93,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
-  padding: 12px 37px;
+  padding: 12px 38px;
 }
 .recording__btn:hover, .recording__btn:focus {
   background-color: #FF6C00;
@@ -361,12 +367,6 @@ button {
     min-height: 437px;
   }
 }
-@media screen and (min-width: 768px) {
-  .header__section {
-    width: 576px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .container__no--header {
     margin: 0 auto;
@@ -570,7 +570,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 12px;
   }
 }
 
@@ -761,6 +760,37 @@ button {
   }
 }
 
+.contaks__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding: 12px 37px;
+}
+.contaks__btn:hover, .contaks__btn:focus {
+  background-color: #FF6C00;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 420px) {
+  .contaks__btn {
+    padding: 12px 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contaks__btn {
+    padding: 12px 20px;
+    color: #FFFFFF;
+  }
+}
+
 .services__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -821,6 +851,10 @@ button {
 }
 
 .services__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -831,7 +865,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
-  padding: 12px 37px;
+  padding: 12px 20px;
 }
 .services__btn:hover, .services__btn:focus {
   background-color: #FF6C00;
@@ -976,6 +1010,30 @@ button {
   margin: 20px 0 40px 0;
 }
 
+.entry__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+.entry__btn:hover, .entry__btn:focus {
+  background-color: #FF6C00;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 420px) {
+  .entry__btn {
+    padding: 12px 15px;
+  }
+}
 .popularity__title {
   font-family: Raleway;
   font-weight: 700;
@@ -1146,8 +1204,6 @@ button {
   text-transform: uppercase;
   color: #303030;
   border: 1px solid #FF6C00;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 25px;
   padding: 12px 37px;
 }
