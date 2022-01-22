@@ -1175,6 +1175,11 @@ button {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  .services__left {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .services__left {
     width: 50%;
