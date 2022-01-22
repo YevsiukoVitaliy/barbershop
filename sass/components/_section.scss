@@ -1,10 +1,25 @@
 .section{
     padding: 84px 0;
+    @media screen and (min-width:768px) {
+        padding: 100px 0;
+    }
+    @media screen and (min-width:1280px) {
+        padding: 130px 0;
+    }
 }
 .footer__section{
     padding: 44px 0;
+    @media screen and (min-width:768px) {
+        padding: 56px 0;
+    }
 }
 .section--black{
     padding: 84px 0;
     background-color: #191C26;
+    @media screen and (min-width:768px) {
+        padding: 100px 0;
+    }
+    @media screen and (min-width:1280px) {
+        padding: 130px 0;
+    }
 }
