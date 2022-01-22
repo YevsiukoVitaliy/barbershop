@@ -1,3 +1,25 @@
+.footer__container{
+    @media screen and (min-width:1280px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+.section--black{
+    @media screen and (min-width:1280px) {
+    &:first-child{
+        width: calc(50% + 15px);
+    }
+    &:last-child{
+        width: calc(50% - 15px);
+    }
+    }
+}
+.footer__adress{
+    margin-top: 40px;
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        display: flex;
+    }
+}
 .recording__btn{
     width: max-content;
     display: block;
@@ -31,6 +53,9 @@
     @media screen and (max-width:420px) {
         font-size: 32px;
     }
+    @media screen and (min-width:768px) {
+        text-align: inherit;
+    }
 }
 .recording__form{
     margin: 44px 0;
@@ -38,8 +63,16 @@
 .recording__container{
     display: flex;
     flex-direction: column;
-    &:not(:last-child){
-        margin-bottom: 44px;
+    width: 100%;
+    @media screen and (max-width:767px) {
+        &:not(:last-child){
+            margin-bottom: 44px;
+        }
+    }
+    @media screen and (min-width:768px) {
+        &:not(:last-child){
+            margin-right: 30px;
+        }
     }
 }
 .recording__container--input{
@@ -70,6 +103,11 @@
     }
 }
 .recording__container--textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+}
+.recording__textarea{
     resize: none;
     border: none;
     height: 76px;
@@ -98,9 +136,10 @@
     }
 }
 .recording__container--btn{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 .section__img{
     background-image:url("../image/imgfooter.png");
@@ -124,7 +163,16 @@
     margin-top: 20px;
 }
 .footer__adress--list{
-    margin: 40px 0 44px 0;
+    @media screen and (max-width:767px) {
+        margin-bottom: 44px;
+    }
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        width: 330px;
+        margin-right: 31px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 70px;
+    }
 }
 .footer__adress--item{
     &:not(:last-child){
@@ -136,7 +184,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9DA4BD;
     display: flex;
@@ -173,7 +221,7 @@
     &::after{
         position: absolute;
         left: 0;
-        bottom: 8.5px;
+        bottom: 10.5px;
         content: "";
         width: 60px;
         height: 1px;
@@ -185,6 +233,19 @@
 }
 .footer__social{
     display: flex;
-    margin-right: auto;
-    margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+}
+.recording__form--container{
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+}
+.footer__section--container{
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
 }

@@ -122,12 +122,34 @@
         <section class="section" id="entry">
             <div class="container">
                 <div class="entry" >
-                    <h3 class="entry__subtitle subtitle">О НАС</h3>
+                    <div class="entry__image">
+                        <picture class="entry__picture">
+                            <source srcset="./image/entry1d-min.jpg 1x, 
+                            ./image/entry1d@2x-min.jpg 2x"
+                            media="(min-width:1280px)">
+                            <source srcset="./image/entry1tab-min.jpg 1x, 
+                            ./image/entry1tab@2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                            <img class="" src="./image/entry1d-min.jpg" alt="">
+                        </picture>
+                        <picture class="entry__picture">
+                            <source srcset="./image/entry2d-min.jpg 1x, 
+                            ./image/entry2d@2x-min.jpg 2x"
+                            media="(min-width:1280px)">
+                            <source srcset="./image/entry2tab-min.jpg 1x, 
+                            ./image/entry2tab@2x-min.jpg 2x"
+                            media="(min-width:768px)">
+                            <img class="" src="./image/entry2d-min.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="entry__content">
+                        <h3 class="entry__subtitle subtitle">О НАС</h3>
                     <h2 class="entry__title">Лучший Барбершоп твоего города</h2>
                     <p class="entry__text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                    <p class="entry__text entry__text--style">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь 
+                    <p class="entry__text--style">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь 
                         в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
                     <a class="entry__btn" href="#onlain" type="button">онлайн-запись</a>
+                    </div>
                  </div>
             </div>
         </section> 
@@ -137,38 +159,42 @@
                     <h3 class="subtitle--grey">Проведи время в компании лучших мастеров</h3>
                     <h2 class="services__title">Услуги и цены</h2>
                     <ul class="services__list">
-                        <li class="services__item">
-                            <p class="services__item--text">Мужская стрижка</p>
-                            <span class="services__item--textline">от 300 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Стрижка бороды</p>
-                            <span class="services__item--textline">от 200 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Стрижка усов</p>
-                            <span class="services__item--textline">от 200 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Бритье опасной бритвой</p>
-                            <span class="services__item--textline">от 200 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Cтрижка у стажера</p>
-                            <span class="services__item--textline">от 50 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Стрижка под насадку</p>
-                            <span class="services__item--textline">от 200 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Детская стрижка (до 12 лет)</p>
-                            <span class="services__item--textline">от 300 грн.</span>
-                        </li>
-                        <li class="services__item">
-                            <p>Камуфлирование седины</p>
-                            <span class="services__item--textline">от 200 грн.</span>
-                        </li>
+                        <div class="services__left">
+                            <li class="services__item">
+                                <p class="services__item--text">Мужская стрижка</p>
+                                <span class="services__item--textline">от 300 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Стрижка бороды</p>
+                                <span class="services__item--textline">от 200 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Стрижка усов</p>
+                                <span class="services__item--textline">от 200 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Бритье опасной бритвой</p>
+                                <span class="services__item--textline">от 200 грн.</span>
+                            </li>
+                        </div>
+                        <div class="services__rigth">
+                            <li class="services__item">
+                                <p>Cтрижка у стажера</p>
+                                <span class="services__item--textline">от 50 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Стрижка под насадку</p>
+                                <span class="services__item--textline">от 200 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Детская стрижка (до 12 лет)</p>
+                                <span class="services__item--textline">от 300 грн.</span>
+                            </li>
+                            <li class="services__item">
+                                <p>Камуфлирование седины</p>
+                                <span class="services__item--textline">от 200 грн.</span>
+                            </li>
+                        </div>
                     </ul>
                     <div class="services__container">
                         <a class="services__btn"href="#onlain" type="button">онлайн-запись</a>
@@ -179,10 +205,11 @@
         <section class="section">
             <div class="container">
                 <div class="popularity">
+                    <div class="popularity__container">
                     <h3 class="popularity__subtitle subtitle">старая традиционная школа</h3>
                     <h2 class="popularity__title">Почему приходят именно к нам?</h2>
                     <p class="popularity__text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
-                    <div class="popularity__container">
+                </div>
                         <ul class="popularity-list">
                             <li class="popularity__item">
                                 <span class="popularity__count">600</span>
@@ -210,16 +237,15 @@
                             </li>
                         </ul>
                     </div>
-                 </div>
             </div>
         </section>   
         <section class="section section--grey" id="command">
-            <div class="container">
+            <div class="container container--grey">
                 <div class="command">
                     <h3 class="popularity__subtitle subtitle">для настоящих ценителей атмосферы</h3>
                     <h2 class="command__title">Наши мастера</h2>
-                    <ul>
-                        <li class="command-item">
+                    <ul class="command__list">
+                        <li class="command__item">
                             <picture>
                                 <source srcset="./image/img1command1.jpg ,
                                 ./image/img1command1@2x.jpg 2x" 
@@ -263,7 +289,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="command-item">
+                        <li class="command__item">
                             <picture>
                                 <source srcset="./image/img2command2.jpg , 
                                 ./image/img2command2@2x.jpg 2x"
@@ -307,7 +333,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="command-item">
+                        <li class="command__item">
                             <picture>
                                 <source srcset="./image/img3command3.jpg , 
                                 ./image/img3command3@2x.jpg 2x"
@@ -398,60 +424,66 @@
      </section>
     </main>
     <footer>
-         <section class="section--black" id="onlain">
-            <div class="container recording">
-                <h2 class="footer__title">Онлайн-запись</h2>
-                <form class="recording__form" action="#" method="post" enctype="multipart/form-data">
-                    <div class="recording__container">
-                        <label for="username"></label>
-                        <input class="recording__container--input" type="text" id="username" placeholder="Имя*">
+         <div class="footer__container container1">
+            <section class="section--black" id="onlain">
+                <div class="container--big container__slip">
+                    <h2 class="footer__title">Онлайн-запись</h2>
+                    <form class="recording__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="recording__form--container">
+                            <div class="recording__container">
+                                <label for="username"></label>
+                                <input class="recording__container--input" type="text" id="username" placeholder="Имя*">
+                            </div>
+                            <div class="recording__container">
+                                <label for="tel"></label>
+                                <input class="recording__container--input" type="tel" id="tel" placeholder="Телефон*">
+                            </div>
+                        </div>
+                        <div class="recording__container--textarea">
+                            <label for="comments"></label>
+                            <textarea placeholder="сообщение" class="recording__textarea" name="text" id="comments"></textarea>
+                        </div>
+                    </form>
+                    <div class="recording__container--btn">
+                         <battom class="recording__btn" type="button">отправить</battom>
                     </div>
-                    <div class="recording__container">
-                        <label for="tel"></label>
-                        <input class="recording__container--input" type="tel" id="tel" placeholder="Телефон*">
-                    </div>
-                    <div class="recording__container">
-                        <label for="comments"></label>
-                        <textarea placeholder="сообщение" class="recording__container--textarea" name="text" id="comments"></textarea>
-                    </div>
-                </form>
-                <div class="recording__container--btn">
-                     <battom class="recording__btn" type="button">отправить</battom>
                 </div>
-            </div>
-         </section>
-         <section class="section--black section__img" id="contakt">
-            <div class="container">
-                <address class="footer__adress">
-                <h2 class="footer__title">Контакты</h2>
-                    <ul class="footer__adress--list">
-                        <li class="footer__adress--item">
-                            <a class="footer__adress--link" href="https://goo.gl/maps/i3SawGnDGTSHp6sc6">
-                                <svg class="footer__icon" width="24" height="24">
-                                    <use href="./image/icon.svg#icon-map-pin"></use>
-                                </svg>
-                                ул. Васильковая, 7А, Киев, 08132</a>
-                        </li>
-                        <li class="footer__adress--item">
-                            <a class="footer__adress--link" href="tel:+380441111111">
-                                <svg class="footer__icon" width="24" height="24">
-                                    <use href="./image/icon.svg#icon-phone"></use>
-                                </svg>
-                                +38 044 111 11 11</a>
-                        </li>
-                        <li class="footer__adress--item">
-                            <a class="footer__adress--link footer__adress--underline" href="mailto:barbershop@email.com">
-                                <svg class="footer__icon" width="24" height="24">
-                                    <use href="./image/icon.svg#icon-emeil"></use>
-                                </svg>
-                                barbershop@email.com</a>
-                        </li>
-                    </ul>
-                </address>
-                <h3 class="subtitle--grey">время работы</h3>
-                <p class="footer__text">Ежедневно с 9:00 до 22:00</p>
-            </div>
-         </section>
+             </section>
+             <section class="section--black section__img" id="contakt">
+                <div class="container--big container__poppa">
+                    <h2 class="footer__title">Контакты</h2>
+                    <address class="footer__adress">
+                        <ul class="footer__adress--list">
+                            <li class="footer__adress--item">
+                                <a class="footer__adress--link" href="https://goo.gl/maps/i3SawGnDGTSHp6sc6">
+                                    <svg class="footer__icon" width="24" height="24">
+                                        <use href="./image/icon.svg#icon-map-pin"></use>
+                                    </svg>
+                                    ул. Васильковая, 7А, Киев, 08132</a>
+                            </li>
+                            <li class="footer__adress--item">
+                                <a class="footer__adress--link" href="tel:+380441111111">
+                                    <svg class="footer__icon" width="24" height="24">
+                                        <use href="./image/icon.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11</a>
+                            </li>
+                            <li class="footer__adress--item">
+                                <a class="footer__adress--link footer__adress--underline" href="mailto:barbershop@email.com">
+                                    <svg class="footer__icon" width="24" height="24">
+                                        <use href="./image/icon.svg#icon-emeil"></use>
+                                    </svg>
+                                    barbershop@email.com</a>
+                            </li>
+                        </ul>
+                        <div class="container__adress">
+                            <h3 class="subtitle--grey">время работы</h3>
+                            <p class="footer__text">Ежедневно с 9:00 до 22:00</p>
+                        </div>
+                    </address>
+                </div>
+             </section>
+         </div>
          <section class="footer__section">
             <div class="container footer__section--container">
                 <ul class="footer__social">
@@ -462,7 +494,7 @@
                         <a class="footer__social--link">Youtube</a>
                     </li>
                 </ul>
-                <p class="footer__section--text">Copyright 2020</p>
+                <p class="footer__section--text">Copyright 2022</p>
             </div>
          </section> 
     </footer>
